@@ -20,7 +20,9 @@ Welcome! This guide will help you set up Xcode for prototyping quickly and effic
 ## Example View
 
 Here’s an example view demonstrating how to use one of our kits:
-![Example View](https://github.com/user-attachments/assets/376b9cda-432b-4572-952f-272449cbc2ac)
+
+
+<img src="https://github.com/user-attachments/assets/376b9cda-432b-4572-952f-272449cbc2ac" width="400" height="300">
 
 ## 🔄 Keep Components Updated
 
