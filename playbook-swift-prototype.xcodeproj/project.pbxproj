@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E736CC042C6B97F500653022 /* Playbook in Frameworks */ = {isa = PBXBuildFile; productRef = E736CC032C6B97F500653022 /* Playbook */; };
 		E7CF16D62C6B90EE003DE707 /* PrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF16D52C6B90EE003DE707 /* PrototypeApp.swift */; };
 		E7CF16D82C6B90EE003DE707 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF16D72C6B90EE003DE707 /* ContentView.swift */; };
 		E7CF16DA2C6B90EF003DE707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7CF16D92C6B90EF003DE707 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E736CC042C6B97F500653022 /* Playbook in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +73,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E736CC022C6B97F500653022 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7CF16C92C6B90EE003DE707 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +87,7 @@
 				E7CF16E52C6B90EF003DE707 /* PrototypeTests */,
 				E7CF16EF2C6B90EF003DE707 /* PrototypeUITests */,
 				E7CF16D32C6B90EE003DE707 /* Products */,
+				E736CC022C6B97F500653022 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +153,9 @@
 			dependencies = (
 			);
 			name = Prototype;
+			packageProductDependencies = (
+				E736CC032C6B97F500653022 /* Playbook */,
+			);
 			productName = Prototype;
 			productReference = E7CF16D22C6B90EE003DE707 /* Prototype.app */;
 			productType = "com.apple.product-type.application";
@@ -206,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E7CF16CD2C6B90EE003DE707 /* Build configuration list for PBXProject "Prototype" */;
+			buildConfigurationList = E7CF16CD2C6B90EE003DE707 /* Build configuration list for PBXProject "playbook-swift-prototype" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,6 +228,9 @@
 				Base,
 			);
 			mainGroup = E7CF16C92C6B90EE003DE707;
+			packageReferences = (
+				E7CF16FF2C6B91A5003DE707 /* XCRemoteSwiftPackageReference "playbook-swift" */,
+			);
 			productRefGroup = E7CF16D32C6B90EE003DE707 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -551,7 +567,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E7CF16CD2C6B90EE003DE707 /* Build configuration list for PBXProject "Prototype" */ = {
+		E7CF16CD2C6B90EE003DE707 /* Build configuration list for PBXProject "playbook-swift-prototype" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7CF16F42C6B90EF003DE707 /* Debug */,
@@ -588,6 +604,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E7CF16FF2C6B91A5003DE707 /* XCRemoteSwiftPackageReference "playbook-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/powerhome/playbook-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E736CC032C6B97F500653022 /* Playbook */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7CF16FF2C6B91A5003DE707 /* XCRemoteSwiftPackageReference "playbook-swift" */;
+			productName = Playbook;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E7CF16CA2C6B90EE003DE707 /* Project object */;
 }
